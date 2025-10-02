@@ -299,7 +299,7 @@
             <div class="message">
                 <p>🐱雪<span id="girlfriend-name">宝宝🌸</span>：</p>
                 <p>在这个特别的日子里，想对宝宝说……</p>
-                <p>愿宝宝每一天都充满阳光和快乐，每一天都开开心心、有臭臭🐱陪伴。</p>
+                <p>愿宝宝每天都充满阳光和快乐，每天都开开心心、有小臭臭🐱陪伴。</p>
 		<p>去年和宝宝去了青岛，还有好多更好玩的地方没探索过的，都想和宝宝一起去呢。🥂</p>
                 <p>其实狗狗一直在而且也从未离开过，心里面更是这样的，一直都在守候宝宝。🌻</p>
                 <p class="signature">岳<span id="my-name">狗狗</span> 🐶</p>
@@ -384,56 +384,57 @@
                         musicStarted = true;
                         musicBtn.textContent = '🔊';
                     }).catch(error => {
-                        console.log('音频播放失败:', error);
-                        alert('音乐播放失败，请点击页面其他位置后重试。');
+                        安慰.原木('音频播放失败:', 错误);
+                        警报('音乐播放失败,请点击页面其他位置后重试。');
                     });
-                } else {
+                } 其他 {
                     // 切换静音/取消静音
-                    if (bgMusic.muted) {
-                        bgMusic.muted = false;
-                        musicBtn.textContent = '🔊';
-                        musicBtn.classList.remove('muted');
-                    } else {
-                        bgMusic.muted = true;
-                        musicBtn.textContent = '🔇';
-                        musicBtn.classList.add('muted');
+                    如果 (bgMusic.柔和的) {
+                        bgMusic.柔和的 = 错误的;
+                        音乐Btn.文本内容 = '🔊';
+                        音乐Btn.优等生名单.去除('静音');
+                    } 其他 {
+                        bgMusic.柔和的 = 真实的;
+                        音乐Btn.文本内容 = '🔇';
+                        音乐Btn.优等生名单.增加('静音');
                     }
                 }
             });
             
-            // 添加页面点击事件，帮助解锁音频自动播放
-            document.body.addEventListener('click', function() {
-                if (!musicStarted) {
-                    // 用户已与页面交互，可以播放音乐
-                    // 但我们不自动播放，等待用户点击音乐按钮
+            // 添加页面点击事件,帮助解锁音频自动播放
+            文件.身体.addEventListener(点击, 功能() {
+                如果 (!音乐开始) {
+                    // 用户已与页面交互,可以播放音乐
+                    // 但我们不自动播放,等待用户点击音乐按钮
                 }
             });
         }
         
         // 初始化页面
-        window.onload = function() {
+        窗户.装载 = 功能() {
             // 可以在这里填写你和女朋友的名字
-                 const girlfriendName = "雪宝";  // 替换为女朋友的名字
-            const myName = "狗狗";           // 替换为你自己的名字或昵称
+                 常数 女朋友名字 = "雪宝";  // 替换为女朋友的名字
+            常数 我的名字 = "狗狗";           // 替换为你自己的名字或昵称
 
             
-            document.getElementById('girlfriend-name').textContent = girlfriendName;
-            document.getElementById('my-name').textContent = myName;
+            文件.getElementById(“女朋友姓名”).文本内容 = 女朋友名字;
+            文件.getElementById(“我的名字”).文本内容 = 我的名字;
             
             // 创建拥抱表情动画
-            createHugs();
+            创建拥抱();
             
             // 开始倒计时
-            startCountdown();
+            开始倒计时();
             
             // 设置音乐控制
             setupMusicControl();
             
             // 添加点击爱心特效
-            document.querySelector('.hearts').addEventListener('click', function() {
-                alert("爱你到永远！🤗💖");
+            文件.查询选择器(。“红心”).addEventListener(点击, 功能() {
+                警报("爱你到永远！🤗💖");
             });
         };
-    </script>
-</body>
-</html>
+    </脚本>
+</身体>
+
+</超文本标记语言>
